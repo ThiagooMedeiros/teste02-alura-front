@@ -16,20 +16,28 @@
           <legend>Dados Pessoais</legend>
 
           <label for="userName">Nome</label>
-          <input type="text" name="userName" required />
+          <input type="text" id="userName" name="userName" required />
 
           <label for="userAge">Idade</label>
-          <input type="number" name="userAge" min="12" max="100" required />
+          <input
+            type="number"
+            id="userAge"
+            name="userAge"
+            min="12"
+            max="100"
+            required
+          />
 
           <label for="birthDate">Data de Nascimento</label>
-          <input type="date" name="birthDate" />
+          <input type="date" id="birthDate" name="birthDate" />
 
           <label for="userEmail">Email</label>
-          <input type="email" name="userEmail" required />
+          <input type="email" id="userEmail" name="userEmail" required />
 
           <label for="userPhoneNumber">Telefone</label>
           <input
             type="tel"
+            id="userPhoneNumber"
             name="userPhoneNumber"
             pattern="[0-9]{2}[0-9]{5}[0-9]{4}"
             placeholder="XX-XXXXX-XXXX"
@@ -37,22 +45,37 @@
           />
 
           <label for="userFile">Sua imagem</label>
-          <input type="file" name="userFile" accept="image/*" />
+          <input type="file" id="userFile" name="userFile" accept="image/*" />
         </fieldset>
 
         <fieldset>
           <legend>Perfil</legend>
 
           <p>Gênero:</p>
-          <input type="radio" name="userGender" value="feminino" />
-          <label for="userGender">Feminino</label>
-          <input type="radio" name="userGender" value="masculino" />
-          <label for="userGender">Masculino</label>
-          <input type="radio" name="userGender" value="naoInformado" />
-          <label for="userGender">Prefiro não informar</label>
+          <input
+            type="radio"
+            id="userGender-feminino"
+            name="userGender"
+            value="feminino"
+          />
+          <label for="userGender-feminino">Feminino</label>
+          <input
+            type="radio"
+            id="userGender-masculino"
+            name="userGender"
+            value="masculino"
+          />
+          <label for="userGender-masculino">Masculino</label>
+          <input
+            type="radio"
+            id="userGender-naoInformado"
+            name="userGender"
+            value="naoInformado"
+          />
+          <label for="userGender-naoInformado">Prefiro não informar</label>
 
           <label for="maritalStatus">Estado civil:</label>
-          <select name="maritalStatus">
+          <select id="maritalStatus" name="maritalStatus">
             <option value="not">Selecione...</option>
             <option value="solteiro">Solteiro(a)</option>
             <option value="casado">Casado(a)</option>
@@ -61,7 +84,7 @@
           </select>
 
           <label for="userState">Estado:</label>
-          <select name="userState" required>
+          <select id="userState" name="userState" required>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
             <option value="AP">Amapá</option>
@@ -93,7 +116,67 @@
           </select>
 
           <label for="city">Cidade</label>
-          <input type="text" name="city" required />
+          <input type="text" id="city" name="city" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Hábitos</legend>
+          <p>Redes sociais:</p>
+          <input
+            type="checkbox"
+            id="socialMedia-instagram"
+            name="socialMedia"
+            value="instagram"
+          />
+          <label for="socialMedia-instagram">Instagram</label>
+          <input
+            type="checkbox"
+            id="socialMedia-facebook"
+            name="socialMedia"
+            value="facebook"
+          />
+          <label for="socialMedia-facebook">Facebook</label>
+          <input
+            type="checkbox"
+            id="socialMedia-twitter"
+            name="socialMedia"
+            value="twitter"
+          />
+          <label for="socialMedia-twitter">Twitter</label>
+          <input
+            type="checkbox"
+            id="socialMedia-tiktok"
+            name="socialMedia"
+            value="tiktok"
+          />
+          <label for="socialMedia-tiktok">TikTok</label>
+          <input
+            type="checkbox"
+            id="socialMedia-linkedin"
+            name="socialMedia"
+            value="linkedin"
+          />
+          <label for="socialMedia-linkedin">LinkedIn</label>
+
+          <br />
+
+          <label for="musicStyle">Estilo de Música</label>
+          <input
+            list="styleTypes"
+            id="musicStyle"
+            name="userMusicStyle"
+            type="text"
+          />
+          <datalist id="styleTypes">
+            <option value="Rock"></option>
+            <option value="Pop"></option>
+            <option value="Sertanejo"></option>
+            <option value="Funk"></option>
+            <option value="Samba"></option>
+          </datalist>
+
+          <label for="favoriteColor">Cor Favotita</label>
+          <input type="color" name="userFavoriteColor" id="favoriteColor" />
         </fieldset>
 
         <button type="submit">Enviar</button>
