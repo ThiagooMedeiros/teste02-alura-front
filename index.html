@@ -157,6 +157,26 @@
             value="linkedin"
           />
           <label for="socialMedia-linkedin">LinkedIn</label>
+
+          <br />
+
+          <label for="musicStyle">Estilo de Música</label>
+          <input
+            list="styleTypes"
+            id="musicStyle"
+            name="userMusicStyle"
+            type="text"
+          />
+          <datalist id="styleTypes">
+            <option value="Rock"></option>
+            <option value="Pop"></option>
+            <option value="Sertanejo"></option>
+            <option value="Funk"></option>
+            <option value="Samba"></option>
+          </datalist>
+
+          <label for="favoriteColor">Cor Favotita</label>
+          <input type="color" name="userFavoriteColor" id="favoriteColor" />
         </fieldset>
 
         <button type="submit">Enviar</button>
