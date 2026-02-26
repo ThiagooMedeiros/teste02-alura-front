@@ -85,3 +85,15 @@ input[type="color"] {
   width: 40px;
   padding: 0 5px;
 }
+
+/*----------Validações-----------------*/
+
+input:invalid,
+select:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid {
+  border-color: green;
+}
