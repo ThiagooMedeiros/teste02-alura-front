@@ -34,6 +34,7 @@ form {
   background-color: white;
   padding: 0.5rem;
   border-radius: 10px;
+  margin-bottom: 5rem;
 }
 
 fieldset {
@@ -86,7 +87,7 @@ input[type="color"] {
   padding: 0 5px;
 }
 
-/*----------Validações-----------------*/
+/*----------------------------Validações--------------------------------*/
 
 input:invalid,
 select:invalid {
@@ -96,4 +97,31 @@ select:invalid {
 input:valid,
 select:valid {
   border-color: green;
+}
+
+/*----------------------------Botões--------------------------------*/
+
+button {
+  font-weight: bold;
+
+  width: 200px;
+  height: 40px;
+  margin-right: 10px;
+
+  background-color: white;
+
+  border: 1px solid gray;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: green;
+  color: white;
+}
+
+button[type="reset"]:hover {
+  background-color: red;
+  color: white;
 }
